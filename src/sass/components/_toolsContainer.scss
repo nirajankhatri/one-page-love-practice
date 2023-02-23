@@ -1,0 +1,20 @@
+.tools-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em 1em;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+    .tools-container {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .tools-container {
+        gap: 1em 1em;
+    }
+}

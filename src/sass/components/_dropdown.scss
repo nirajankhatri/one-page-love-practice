@@ -1,0 +1,97 @@
+.dropdown {
+  
+    label.dropdown--label {
+      position: relative;
+      height: 20px;
+      width: 100px;
+      display: inline-block;
+      
+      .dropdown--checkbox {
+        position: absolute; left: -2000000px;
+      }
+      
+      .dropdown--text {
+        cursor: pointer;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        
+        .dropdown--arrow {
+          width: 10px;
+          height: 10px;
+          border-right: 2px solid #616D90;
+          border-bottom: 2px solid #616D90;
+          margin-left: auto;
+          transform: rotate(45deg);
+          transition: all ease-in 0.3s;
+          position: relative;
+          top: -2px;
+        }
+      }
+      
+      .dropdown--list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+        transition: all ease-out 0.3s;
+        background: var(--theme-page-background);
+        border-radius: 5px;
+        padding-right: 10px;
+        overflow: hidden;
+        max-height: 200px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #fff;
+          border-left: 1px solid #DEE5FF;
+        }
+  
+        &::-webkit-scrollbar-thumb {
+         background: #DEE5FF;
+          border-radius: 5px;
+          &:hover {
+            background: #cfd8f7;
+          }
+        }
+        
+        ul {
+        
+          li {
+            a {
+              white-space: nowrap;
+              text-decoration: none;
+              color: var(--theme-black-white-color);
+              display: block;
+              padding: 5px 20px;
+            }
+          }
+        }
+      }
+      
+      .dropdown--checkbox:checked ~ .dropdown--list {
+        top: 120%;
+        opacity: 1;
+        visibility: visible;
+        transition: all ease-in 0.3s;
+      }
+      
+      .dropdown--checkbox:checked ~ .dropdown--text {
+        .dropdown--arrow {
+          transform: rotate(-135deg);
+          top: 5px;
+        }
+      }
+    }
+  }
+  

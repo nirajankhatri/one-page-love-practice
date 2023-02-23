@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.card .card-title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--theme-color);
+}
+
+.card-heading {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card .card-desc {
+  text-align: center;
+  line-height: 150%;
+  color: var(--theme-page--secondary-text);
+}
+
+.card .card-btn {
+  padding: 0.5em;
+  border: none;
+  background-color: transparent;
+  color: var(--theme-color);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 975px) {
+  .card-heading {
+    font-size: 3vw;
+    text-align: center;
+  }
+}

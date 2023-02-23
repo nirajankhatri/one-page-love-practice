@@ -1,0 +1,21 @@
+.white-content {
+  --theme-color: #4c566a;
+  --theme-page-background: #ffffff;
+  --theme-page-text: #111;
+  --theme-page--secondary-text: gray;
+  --theme-page-emphasis: black;
+  --theme-black-white-color: black;
+  --theme-box-shadow: rgba(0,0,0,.15);
+  color: black;
+}
+
+.dark-content {
+  --theme-color: #c69749;
+  --theme-page-background: #121212;
+  --theme-page-text: #fff;
+  --theme-page--secondary-text: gray;
+  --theme-page-emphasis: #c69749;
+  --theme-black-white-color: white;
+  --theme-box-shadow: rgba(1, 1, 1, 1);
+  color: white;
+}

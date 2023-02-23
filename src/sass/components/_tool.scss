@@ -1,0 +1,45 @@
+.tool {
+    max-width: 30%;
+    text-align: center;
+    div {
+        align-items: center;
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+        img {
+            width: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    h1 {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    p {
+        color: gray;
+        font-size: 1rem;
+        padding: 0 5vw;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        color: #4c566a;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tool {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tool {
+        max-width: 90%;
+    }
+}
+

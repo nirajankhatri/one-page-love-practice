@@ -1,0 +1,48 @@
+.demo_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin: 3em auto;
+    gap: 1em;
+
+    @media (max-width: 675px) {
+        max-width: 80%;
+    }
+
+}
+
+.demo_section .demo-subhead {
+    font-size: 1rem;
+    color: var(--theme-color);
+    font-weight: 500;
+}
+
+.demo-mainhead {
+    font-size: 4vw;
+    text-align: center;
+}
+
+.demo-desc {
+    text-align: center;
+    color: var(--theme-page--secondary-text);
+    line-height: 150%;
+}
+
+.demo-btns {
+    display: flex;
+    gap: 1em;
+}
+
+.demo-btns button {
+    padding: .25em .5em;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.125rem;
+}
+.btn-get-start {
+    background-color: var(--theme-color);
+    color: var(--theme-page-background);
+}
+
+

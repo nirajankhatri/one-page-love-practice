@@ -1,0 +1,33 @@
+.tools-section {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.tools-section-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4c566a;
+  }
+
+  p {
+    color: gray;
+  }
+}
+
+.tools-section-btn {
+  border: none;
+  background-color: #4c566a;
+  color: white;
+  border-radius: 20px;
+  padding: .5em 2em;
+  cursor: pointer;
+}

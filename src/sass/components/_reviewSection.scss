@@ -1,0 +1,55 @@
+.review-section {
+  padding: 2em 2em;
+  max-width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 0 auto;
+
+  @media (max-width: 700px) {
+    max-width: 80%;
+    padding: 0 2em;
+  }
+
+  .rating {
+    color: var(--theme-color);
+  }
+}
+
+.review {
+  font-size: 1.5vw;
+  font-weight: 700;
+
+  @media (max-width: 800px) {
+    font-size: 3.5vw;
+  }
+}
+
+.reviewer {
+  p {
+    color: gray;
+    font-size: 0.9em;
+  }
+}
+
+.avatar-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+
+  img {
+    width: 40px;
+    border-radius: 50px;
+    filter: saturate(0.4);
+
+    @media (max-width: 675px) {
+        width: 30px;
+    }
+  }
+}
+
+.selected-avatar {
+  filter: saturate(100%) !important;
+  transform: scale(1.5);
+}
